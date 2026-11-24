@@ -52,5 +52,5 @@ Design Notes
 - The footer is designed to sit at the bottom on short pages while remaining in normal document flow on longer pages. A
 - The logo is intended to appear circular.
 - The visual theme uses red accents with charcoal/dark gray and white, inspired by the "University of Baguio login page". 
-- The visual theme uses red accents with charcoal/dark gray and white, inspired by the University of Baguio login page. Use the same palette consistently for buttons, headings, borders, and interactive states.
-- Native HTML select menus may still display a system-controlled blue highlight in some Chrome/Windows dropdowns. CSS may not be able to fully recolor that native highlight; a custom dropdown would be needed for consistent styling.
+- The visual theme uses red accents with charcoal/dark gray and white, inspired by the University of Baguio login page.
+- Native HTML select menus may still display a system-controlled blue highlight in some Chrome/Windows dropdowns. 
