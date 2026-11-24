@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindME - Lost and Found Items</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a class="logo" href="index.html">
+            <img src="logo.png" alt="FindME Logo">
+            <h2>FindME</h2>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a class="active" href="items.html">Lost &amp; Found</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+    <main>
+        <section class="page-title">
+            <h1>Campus Lost and Found</h1>
+            <p>Browse items lost and found inside our school.</p>
+        </section>
+        <section class="items-section">
+            <div class="listing-toolbar">
+                <input
+                    type="search"
+                    id="searchItems"
+                    placeholder="Search item name or location..."
+                    aria-label="Search items"
+                >
+                <select id="filterType" aria-label="Filter listings">
+                    <option value="All">All Items</option>
+                    <option value="Lost">Lost Items</option>
+                    <option value="Found">Found Items</option>
+                </select>
+            </div>
+            <h2>Item Listings</h2>
+            <div id="itemsContainer" class="container"></div>
+            <p id="emptyMessage" class="empty-message" hidden>
+                No items match your search.
+            </p>
+        </section>
+        
+    </main>
+    <footer>
+        <p>© 2026 FindME | School Campus Lost and Found</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

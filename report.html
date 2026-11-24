@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindME - Report an Item</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a class="logo" href="index.html">
+            <img src="logo.png" alt="FindME Logo">
+            <h2>FindME</h2>
+        </a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="items.html">Lost &amp; Found</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-title">
+            <h1>Report an Item</h1>
+            <p>Help us find missing belongings around the campus.</p>
+        </section>
+        <section class="report-section">
+
+            <div class="report-box">
+                <h2>Item Information</h2>
+                <form id="reportForm">
+                    <label for="type">Report Type</label>
+                    <select id="type" name="type" required>
+                        <option value="">Select Report Type</option>
+                        <option value="Lost">Lost Item</option>
+                        <option value="Found">Found Item</option>
+                    </select>
+                    <label for="itemName">Item Name</label>
+
+                    <input
+                        id="itemName"
+                        name="itemName"
+                        type="text"
+                        maxlength="80"
+                        placeholder="Enter item name"
+                        required
+                    >
+                    <label for="description">Item Description</label>
+                    <textarea
+                        id="description" name="description"rows="4" maxlength="500"
+                        placeholder="Describe the item..."
+                        required
+                    ></textarea>
+                    <label for="location">Location</label>
+                    <input
+                        id="location"
+                        name="location"
+                        type="text"
+                        maxlength="120"
+                        placeholder="Where was it lost or found?"
+                        required
+                    >
+                    <label for="date">Date</label>
+
+                    <input
+                        id="date"
+                        name="date"
+                        type="date"
+                        required
+                    >
+                    <label for="studentName">Student Name</label>
+
+                    <input
+                        id="studentName"
+                        name="studentName"
+                        type="text"
+                        maxlength="100"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                    <button type="submit" class="full-button">
+                        Submit Report
+                    </button>
+
+                    <a href="items.html" class="cancel-btn">
+                        Cancel
+                    </a>
+
+                </form>
+
+                <p
+                    id="formMessage"
+                    class="form-message"
+                    role="status"
+                    aria-live="polite"
+                ></p>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 FindME | School Campus Lost and Found</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
